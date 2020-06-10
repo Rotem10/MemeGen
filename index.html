@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memegen</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body onload="onInit()">
+
+    <header>
+        <nav>
+            <div class="logo"><img src="styles/LOGO.png"></div>
+        </nav>
+    </header>
+
+    <div class="gallery-container"></div>
+
+    <div class="editor-container">
+        <canvas id="canvas" style="border: 1px solid red;" height="500" width="500"></canvas>
+        <div class="control-box">
+            <input type="text" id="text" onkeyup="onWrite(event,this.value)" placeholder="Your Text">
+            <!-- <button onclick="drawRect()">draw</button> -->
+        </div>
+    </div>
+
+    <script src="js/storage-service.js"></script>
+    <script src="js/meme-service.js"></script>
+    <script src="js/meme-controller.js"></script>
+</body>
+
+</html>

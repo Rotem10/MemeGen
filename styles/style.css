@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* margin: 0; */
+    background-color: #94e4ff33;
+}
+
+.gallery-container {
+    border: 1px solid black;
+}
+
+.editor-container {
+    display: none;
+    border: 1px solid blue;
+}
+
+img {
+    width: 15%;
+    cursor: pointer;
+}
+
+.control-box {
+    display: inline-block;
+}
